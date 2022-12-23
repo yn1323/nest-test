@@ -11,6 +11,11 @@ export class AppController {
   }
   @Post()
   getHelloo(): string {
-    return 'hello post'
+    return 'hello post';
+  }
+
+  @Get('/path')
+  getPath(): string {
+    return 'hello from another path';
   }
 }
